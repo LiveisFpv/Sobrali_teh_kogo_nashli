@@ -19,7 +19,7 @@ set_velocity = rospy.ServiceProxy('set_velocity', srv.SetVelocity)
 set_attitude = rospy.ServiceProxy('set_attitude', srv.SetAttitude)
 set_rates = rospy.ServiceProxy('set_rates', srv.SetRates)
 land = rospy.ServiceProxy('land', Trigger)
-#Ожидание прилета в точку
+#Ожидание прилета в точку 
 def navigate_wait(x=0, y=0, z=0, yaw=float('nan'), speed=0.3, frame_id='', auto_arm=False, tolerance=0.1):
     navigate(x=x, y=y, z=z, yaw=yaw, speed=speed, frame_id=frame_id, auto_arm=auto_arm)
 
